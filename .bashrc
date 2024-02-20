@@ -40,10 +40,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 
-# Run these two commands in your terminal to add Homebrew to your PATH:
-(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/abrarshakhi/.bashrc
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # - Install Homebrew's dependencies if you have sudo access:
 # For more information, see: https://docs.brew.sh/Homebrew-on-Linux
-
-
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
