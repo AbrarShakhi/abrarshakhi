@@ -47,6 +47,3 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # For more information, see: https://docs.brew.sh/Homebrew-on-Linux
 
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
