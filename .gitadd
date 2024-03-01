@@ -1,18 +1,7 @@
-.gitadd .bashrc .zshrc README.md .config/nvim .config/fish .config/helix .emacs
+.gitadd .bashrc .zshrc README.md .config/nvim .config/fish .config/helix .emacs .config/kitty .profile
 
-
-
-echo "# abrarshakhi" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/AbrarShakhi/abrarshakhi.git
-git push -u origin main
-
-
-git remote add origin https://github.com/AbrarShakhi/abrarshakhi.git
-git branch -M main
-git push -u origin main
+# git branch -M main
+# git remote add origin https://github.com/AbrarShakhi/abrarshakhi.git
+# git push -u origin main
 
 
