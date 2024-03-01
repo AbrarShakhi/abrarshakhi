@@ -26,6 +26,7 @@ unset rc
 
 
 alias nv='nvim'
+alias hx='helix'
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
