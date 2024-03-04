@@ -1,7 +1,0 @@
-.gitadd .bashrc .zshrc README.md .config/nvim .config/fish .config/helix .emacs .config/kitty .profile
-
-# git branch -M main
-# git remote add origin https://github.com/AbrarShakhi/abrarshakhi.git
-# git push -u origin main
-
-
