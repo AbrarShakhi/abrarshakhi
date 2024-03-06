@@ -9,7 +9,8 @@ dirs=(
 	".gitadd.sh"
 	# env
 	".zshrc"
-  ".zshenv"
+	".config/sh"
+  	".zshenv"
 	# editor
 	".config/nvim"
 	".config/helix"
