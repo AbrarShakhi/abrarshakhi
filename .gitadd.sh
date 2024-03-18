@@ -10,16 +10,15 @@ dirs=(
 	# env
 	".zshrc"
 	".config/sh"
-  	".zshenv"
+  ".zshenv"
 	# editor
 	".config/nvim"
 	".config/helix"
-	".emacs"
 	# terminal emulator
 	".config/kitty"
-	# window manager
-	".config/hypr"
-	".config/awesome"
+	# window manager and utils
+	".config/rofi"
+	".config/awesome/"
 )
 
 for dir in "${dirs[@]}"; do
@@ -27,3 +26,5 @@ for dir in "${dirs[@]}"; do
 done
 
 echo "Directories have been added to the git staging area."
+
+git status

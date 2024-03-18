@@ -19,6 +19,7 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.lang.omnisharp" },
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.rust" },
+    { import = "lazyvim.plugins.extras.lang.go" },
 
     -- dap
     { import = "lazyvim.plugins.extras.dap.core" },
@@ -29,7 +30,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.formatting.prettier" },
 
     -- extra
-    -- { import = "lazyvim.plugins.extras.coding.native_snippets" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
     -- import/override with your plugins
     { import = "plugins" },
