@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="suvash"
+omz_themes=("half-life" "cloud" "imajes" "terminalparty" "theunraveler" "wedisagree")
+ZSH_THEME=${omz_themes[3]}
 plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting

@@ -10,6 +10,7 @@ if true then
     "nvim-treesitter",
     "nvim-treesitter-textobjects",
     "nvim-ts-context-commentstring",
-    "vim-repeat",
+    "BurntSushi/ripgrep",
+    "nvim-neotest/nvim-nio"
   }
 end

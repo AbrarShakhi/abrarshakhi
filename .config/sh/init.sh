@@ -1,13 +1,9 @@
-# for FILE in $(find ~/.config/sh/general -name '*.sh'); do
-#     source "$FILE"
-# done
-#
-# for FILE in $(find ~/.config/sh/env -name '*.sh'); do
-#     source "$FILE"
-# done
+SH_PATH=~/.config/sh
 
-for FILE in $(find ~/.config/sh -name '*.sh'); do
-	if [ $FILE != '/home/abrarshakhi/.config/sh/init.sh' ]; then
-		source "$FILE"
+INIT=$(find $SH_PATH -name 'init.sh')
+
+for FILE in $(find $SH_PATH -name '*.sh'); do
+	if [ $FILE != $INIT ]; then
+		source $FILE
 	fi
 done

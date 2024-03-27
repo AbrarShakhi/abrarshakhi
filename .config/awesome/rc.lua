@@ -95,6 +95,7 @@ editor_cmd = terminal .. " -e " .. editor
 
 menubar.utils.terminal = terminal
 theme.icon_theme = "Adwaita"
+theme.font = "Ubuntu Reqular"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
