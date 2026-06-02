@@ -1,11 +1,11 @@
 {
-    "name": "abrarshakhi",
-    "short_name": "abrarshakhi",
+    "name": "Abrar Shakhi — Portfolio",
+    "short_name": "Abrar Shakhi",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FAF9F5",
+    "theme_color": "#FAF9F5",
+    "description": "Abrar Shakhi — Software Engineer. Portfolio, projects and experience.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

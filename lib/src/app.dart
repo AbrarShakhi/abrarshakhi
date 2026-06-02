@@ -6,6 +6,7 @@ import 'data/portfolio_content.dart';
 import 'domain/repositories/portfolio_repository.dart';
 import 'presentation/bloc/portfolio/portfolio_bloc.dart';
 import 'presentation/bloc/theme/theme_cubit.dart';
+import 'presentation/pages/portfolio_page.dart';
 
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({super.key, required this.repository});
@@ -30,7 +31,7 @@ class PortfolioApp extends StatelessWidget {
             theme: AppTheme.light(),
             darkTheme: AppTheme.dark(),
             themeMode: themeMode,
-            home: const Scaffold(),
+            home: const PortfolioPage(),
           );
         },
       ),
