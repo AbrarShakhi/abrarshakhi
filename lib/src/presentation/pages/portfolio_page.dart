@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../core/theme/app_spacing.dart';
 import '../../domain/entities/portfolio.dart';
 import '../bloc/portfolio/portfolio_bloc.dart';
 import '../bloc/theme/theme_cubit.dart';
@@ -52,11 +51,20 @@ class _PortfolioViewState extends State<_PortfolioView> {
   final _aboutKey = GlobalKey();
   final _workKey = GlobalKey();
   final _experienceKey = GlobalKey();
+  final _contactKey = GlobalKey();
 
   @override
   void dispose() {
     _scrollController.dispose();
     super.dispose();
+  }
+
+  void _scrollToTop() {
+    _scrollController.animateTo(
+      0,
+      duration: const Duration(milliseconds: 600),
+      curve: Curves.easeInOutCubic,
+    );
   }
 
   void _scrollTo(GlobalKey key) {
@@ -96,7 +104,14 @@ class _PortfolioViewState extends State<_PortfolioView> {
           top: 0,
           left: 0,
           right: 0,
-          child: TopNavBar(name: profile.name, items: navItems),
+          child: TopNavBar(
+            name: profile.name,
+            items: navItems,
+            onLogoTap: _scrollToTop,
+            isDark: context.watch<ThemeCubit>().isDark,
+            onToggleTheme: () => context.read<ThemeCubit>().toggle(),
+            onContact: () => _scrollTo(_contactKey),
+          ),
         ),
       ],
     );
