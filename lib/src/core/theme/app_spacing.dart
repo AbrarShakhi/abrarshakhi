@@ -1,13 +1,13 @@
 abstract final class AppSpacing {
   static const double xs = 4;
-  static const double sm = 5;
-  static const double md = 10;
-  static const double lg = 20;
-  static const double xl = 30;
-  static const double xxl = 40;
-  static const double xxxl = 50;
+  static const double sm = 8;
+  static const double md = 16;
+  static const double lg = 24;
+  static const double xl = 32;
+  static const double xxl = 48;
+  static const double xxxl = 80;
 
-  static const double maxContentWidth = 500;
+  static const double maxContentWidth = 1080;
 
   static const double sectionGap = 96;
   static const double sectionGapMobile = 64;
