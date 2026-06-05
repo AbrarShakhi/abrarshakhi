@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../domain/entities/education.dart';
-import '../domain/entities/experience.dart';
 import '../domain/entities/portfolio.dart';
 import '../domain/entities/profile.dart';
 import '../domain/entities/project.dart';
 import '../domain/entities/project_link.dart';
-import '../domain/entities/research.dart';
 import '../domain/entities/skill_group.dart';
 import '../domain/entities/social_link.dart';
 
