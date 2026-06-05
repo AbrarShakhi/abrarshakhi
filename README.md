@@ -25,25 +25,25 @@ class ShakhiulAbrar:
         self.role   = "CS student @ East West University"
         self.place  = "Dhaka, Bangladesh 🇧🇩"
         self.focus  = ["Android", "Web", "Machine Learning", "Systems"]
-        self.stack  = ["Kotlin", "Python", "TypeScript", "C/C++", "Dart"]
+        self.stack  = ["Kotlin", "Python", "C/C++", "Dart", "java"]
         self.contact = "linktr.ee/msa_"
 
     def say_hi(self):
         print("Thanks for stopping by — let's build something!")
 ```
 
-- 🔭 Building **Android** apps with **Kotlin + Jetpack Compose** and **web** apps with **Next.js**
+- 🔭 Building **Android** apps with **Kotlin + Jetpack Compose** and **Flutter**
 - 🌱 Exploring **Machine Learning** (Python, Jupyter) and **low-level systems** in **C / C++**
 - 🛠️ Author of [**quick-run-in-terminal**](https://github.com/AbrarShakhi/quick-run-in-terminal), a VS Code extension to run code in many languages
-- 💬 Ask me about **Flutter, Android, Next.js**, or writing a **Linux shell in C**
+- 💬 Ask me about **Flutter, Android**, or writing a **Linux shell in C**
 - ⚡ Fun fact: I've built a shell in C, a solar-system simulator, and a SIFT panorama stitcher
 
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,kotlin,dart,cpp,c,ts,js,java" alt="languages" /><br/>
-  <img src="https://skillicons.dev/icons?i=flutter,androidstudio,react,nextjs,nodejs,html,css,tailwind" alt="frameworks" /><br/>
-  <img src="https://skillicons.dev/icons?i=sklearn,opencv,git,github,linux,vscode,gradle,bash" alt="tools" />
+  <img src="https://skillicons.dev/icons?i=cpp,c,python,kotlin,dart,java,ts,js" alt="languages" /><br/>
+  <img src="https://skillicons.dev/icons?i=flutter,androidstudio,sklearn,opencv,pytorch" alt="frameworks" /><br/>
+  <img src="https://skillicons.dev/icons?i=git,github,linux,vscode,gradle,bash" alt="tools" />
 </p>
 
 ## 📌 Featured Projects
