@@ -90,10 +90,6 @@ class ShakhiulAbrar:
   </picture>
 </p>
 
-> ℹ️ The snake renders after the **"Generate Snake animation"** GitHub Action runs once
-> (added at `.github/workflows/snake.yml`). Trigger it from the **Actions** tab → *Run workflow*,
-> or just push to `main`. It then publishes the SVG to the `output` branch.
-
 <!--
   Optional classic cards — github-readme-stats & github-profile-trophy were rate-limited
   (HTTP 503 / 402 on their shared public instances) when this was generated. Uncomment when
