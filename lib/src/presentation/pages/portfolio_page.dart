@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../core/theme/app_spacing.dart';
 import '../../domain/entities/portfolio.dart';
 import '../bloc/portfolio/portfolio_bloc.dart';
 import '../bloc/theme/theme_cubit.dart';
+import '../sections/about_section.dart';
+import '../sections/contact_section.dart';
+import '../sections/education_section.dart';
+import '../sections/experience_section.dart';
+import '../sections/hero_section.dart';
+import '../sections/projects_section.dart';
+import '../sections/research_section.dart';
+import '../sections/skills_section.dart';
 import '../widgets/top_nav_bar.dart';
 
 class PortfolioPage extends StatelessWidget {
@@ -97,7 +106,45 @@ class _PortfolioViewState extends State<_PortfolioView> {
         Positioned.fill(
           child: SingleChildScrollView(
             controller: _scrollController,
-            child: Column(children: []),
+            child: Column(
+              children: [
+                HeroSection(
+                  profile: profile,
+                  onViewWork: () => _scrollTo(
+                    portfolio.projects.isNotEmpty ? _workKey : _contactKey,
+                  ),
+                  onContact: () => _scrollTo(_contactKey),
+                ),
+                if (profile.about.isNotEmpty)
+                  KeyedSubtree(
+                    key: _aboutKey,
+                    child: AboutSection(profile: profile),
+                  ),
+                if (portfolio.projects.isNotEmpty)
+                  KeyedSubtree(
+                    key: _workKey,
+                    child: ProjectsSection(projects: portfolio.projects),
+                  ),
+                if (portfolio.experiences.isNotEmpty)
+                  KeyedSubtree(
+                    key: _experienceKey,
+                    child: ExperienceSection(
+                      experiences: portfolio.experiences,
+                    ),
+                  ),
+                if (portfolio.education.isNotEmpty)
+                  EducationSection(education: portfolio.education),
+                if (portfolio.research.isNotEmpty)
+                  ResearchSection(research: portfolio.research),
+                if (portfolio.skillGroups.isNotEmpty)
+                  SkillsSection(groups: portfolio.skillGroups),
+                KeyedSubtree(
+                  key: _contactKey,
+                  child: ContactSection(profile: profile),
+                ),
+                const SizedBox(height: AppSpacing.xl),
+              ],
+            ),
           ),
         ),
         Positioned(
